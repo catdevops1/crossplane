@@ -100,7 +100,7 @@ spec:
     name: default
     kind: ProviderConfig
 ---
-# ProtonMail DKIM records - DO NOT MODIFY
+# ProtonMail DKIM records - READ ONLY - DO NOT MODIFY
 apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
 kind: Record
 metadata:
@@ -110,6 +110,8 @@ metadata:
     crossplane.io/external-name: "9539a36c3e4b792b0c6dc5a9cd16a2f5"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  managementPolicies:
+    - Observe
   forProvider:
     zoneId: "6ee56644798bada42b5503d52ff27754"
     name: "protonmail._domainkey.catdevops.net"
@@ -130,6 +132,8 @@ metadata:
     crossplane.io/external-name: "27ba80985178fc4d69d1d296ead88c11"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  managementPolicies:
+    - Observe
   forProvider:
     zoneId: "6ee56644798bada42b5503d52ff27754"
     name: "protonmail2._domainkey.catdevops.net"
@@ -150,6 +154,8 @@ metadata:
     crossplane.io/external-name: "c066f74caeb062c6a61ff3d516e170c4"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  managementPolicies:
+    - Observe
   forProvider:
     zoneId: "6ee56644798bada42b5503d52ff27754"
     name: "protonmail3._domainkey.catdevops.net"
@@ -161,7 +167,7 @@ spec:
     name: default
     kind: ProviderConfig
 ---
-# MX records - DO NOT MODIFY
+# MX records - READ ONLY - DO NOT MODIFY
 apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
 kind: Record
 metadata:
@@ -171,6 +177,8 @@ metadata:
     crossplane.io/external-name: "726dffa4a8d7f9bcaa026b36d4f64511"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  managementPolicies:
+    - Observe
   forProvider:
     zoneId: "6ee56644798bada42b5503d52ff27754"
     name: "catdevops.net"
@@ -192,6 +200,8 @@ metadata:
     crossplane.io/external-name: "cdf12d12c6d29bb9eebd3de58b01abed"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  managementPolicies:
+    - Observe
   forProvider:
     zoneId: "6ee56644798bada42b5503d52ff27754"
     name: "catdevops.net"
@@ -204,7 +214,7 @@ spec:
     name: default
     kind: ProviderConfig
 ---
-# TXT records - DO NOT MODIFY
+# TXT records - READ ONLY - DO NOT MODIFY
 apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
 kind: Record
 metadata:
@@ -214,6 +224,8 @@ metadata:
     crossplane.io/external-name: "5d0d0d10eb0f83116702a0b89530ef3f"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  managementPolicies:
+    - Observe
   forProvider:
     zoneId: "6ee56644798bada42b5503d52ff27754"
     name: "catdevops.net"
@@ -234,6 +246,8 @@ metadata:
     crossplane.io/external-name: "19c501d43e2ff139d077bf0e9ffcc3c8"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  managementPolicies:
+    - Observe
   forProvider:
     zoneId: "6ee56644798bada42b5503d52ff27754"
     name: "catdevops.net"
@@ -254,6 +268,8 @@ metadata:
     crossplane.io/external-name: "7b9dfb63a282127797c5db1d41b2cc8b"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  managementPolicies:
+    - Observe
   forProvider:
     zoneId: "6ee56644798bada42b5503d52ff27754"
     name: "_dmarc.catdevops.net"
