@@ -1,0 +1,266 @@
+# Tunnel CNAME records
+---
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-root
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "47aa413f1e1992c5903750d855c99193"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "catdevops.net"
+    type: "CNAME"
+    content: "73262dbe-b1e1-409c-8d00-e5b3280c37f0.cfargotunnel.com"
+    proxied: true
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-www
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "d28bf4cb4f3d027dd20454f19632ceec"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "www.catdevops.net"
+    type: "CNAME"
+    content: "73262dbe-b1e1-409c-8d00-e5b3280c37f0.cfargotunnel.com"
+    proxied: true
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-argocd
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "3cbf4075513bfd57fb3e2bc687f126c4"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "argocd.catdevops.net"
+    type: "CNAME"
+    content: "73262dbe-b1e1-409c-8d00-e5b3280c37f0.cfargotunnel.com"
+    proxied: true
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-job-track
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "09e05510a59610de82e43c81cdd1b1ef"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "job-track.catdevops.net"
+    type: "CNAME"
+    content: "73262dbe-b1e1-409c-8d00-e5b3280c37f0.cfargotunnel.com"
+    proxied: true
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-metrics
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "72d5f3603f072380b8d22fc1d047710c"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "metrics.catdevops.net"
+    type: "CNAME"
+    content: "73262dbe-b1e1-409c-8d00-e5b3280c37f0.cfargotunnel.com"
+    proxied: true
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+# ProtonMail DKIM records - DO NOT MODIFY
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-protonmail-dkim1
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "9539a36c3e4b792b0c6dc5a9cd16a2f5"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "protonmail._domainkey.catdevops.net"
+    type: "CNAME"
+    content: "protonmail.domainkey.dllgb243zq6sbiaplviooaonylafeceel7wc62wuvnzq23rkey7wa.domains.proton.ch"
+    proxied: false
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-protonmail-dkim2
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "27ba80985178fc4d69d1d296ead88c11"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "protonmail2._domainkey.catdevops.net"
+    type: "CNAME"
+    content: "protonmail2.domainkey.dllgb243zq6sbiaplviooaonylafeceel7wc62wuvnzq23rkey7wa.domains.proton.ch"
+    proxied: false
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-protonmail-dkim3
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "c066f74caeb062c6a61ff3d516e170c4"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "protonmail3._domainkey.catdevops.net"
+    type: "CNAME"
+    content: "protonmail3.domainkey.dllgb243zq6sbiaplviooaonylafeceel7wc62wuvnzq23rkey7wa.domains.proton.ch"
+    proxied: false
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+# MX records - DO NOT MODIFY
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-mx-mail
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "726dffa4a8d7f9bcaa026b36d4f64511"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "catdevops.net"
+    type: "MX"
+    content: "mail.protonmail.ch"
+    proxied: false
+    ttl: 1
+    priority: 10
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-mx-mailsec
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "cdf12d12c6d29bb9eebd3de58b01abed"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "catdevops.net"
+    type: "MX"
+    content: "mailsec.protonmail.ch"
+    proxied: false
+    ttl: 1
+    priority: 20
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+# TXT records - DO NOT MODIFY
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-txt-spf
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "5d0d0d10eb0f83116702a0b89530ef3f"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "catdevops.net"
+    type: "TXT"
+    content: "v=spf1 include:_spf.protonmail.ch ~all"
+    proxied: false
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-txt-protonmail-verify
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "19c501d43e2ff139d077bf0e9ffcc3c8"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "catdevops.net"
+    type: "TXT"
+    content: "protonmail-verification=eb2b9a8eb50bee65aee0a07a6857e125503b7afc"
+    proxied: false
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
+---
+apiVersion: dns.upjet-cloudflare.m.upbound.io/v1alpha1
+kind: Record
+metadata:
+  name: catdevops-txt-dmarc
+  namespace: crossplane-system
+  annotations:
+    crossplane.io/external-name: "7b9dfb63a282127797c5db1d41b2cc8b"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  forProvider:
+    zoneId: "6ee56644798bada42b5503d52ff27754"
+    name: "_dmarc.catdevops.net"
+    type: "TXT"
+    content: "v=DMARC1; p=quarantine"
+    proxied: false
+    ttl: 1
+  providerConfigRef:
+    name: default
+    kind: ProviderConfig
