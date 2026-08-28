@@ -107,7 +107,7 @@ metadata:
   name: catdevops-protonmail-dkim1
   namespace: crossplane-system
   annotations:
-    crossplane.io/external-name: "9539a36c3e4b792b0c6dc5a9cd16a2f5"
+    crossplane.io/external-name: "6ee56644798bada42b5503d52ff27754/9539a36c3e4b792b0c6dc5a9cd16a2f5"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   managementPolicies:
@@ -129,7 +129,7 @@ metadata:
   name: catdevops-protonmail-dkim2
   namespace: crossplane-system
   annotations:
-    crossplane.io/external-name: "27ba80985178fc4d69d1d296ead88c11"
+    crossplane.io/external-name: "6ee56644798bada42b5503d52ff27754/27ba80985178fc4d69d1d296ead88c11"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   managementPolicies:
@@ -151,7 +151,7 @@ metadata:
   name: catdevops-protonmail-dkim3
   namespace: crossplane-system
   annotations:
-    crossplane.io/external-name: "c066f74caeb062c6a61ff3d516e170c4"
+    crossplane.io/external-name: "6ee56644798bada42b5503d52ff27754/c066f74caeb062c6a61ff3d516e170c4"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   managementPolicies:
@@ -174,7 +174,7 @@ metadata:
   name: catdevops-mx-mail
   namespace: crossplane-system
   annotations:
-    crossplane.io/external-name: "726dffa4a8d7f9bcaa026b36d4f64511"
+    crossplane.io/external-name: "6ee56644798bada42b5503d52ff27754/726dffa4a8d7f9bcaa026b36d4f64511"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   managementPolicies:
@@ -197,7 +197,7 @@ metadata:
   name: catdevops-mx-mailsec
   namespace: crossplane-system
   annotations:
-    crossplane.io/external-name: "cdf12d12c6d29bb9eebd3de58b01abed"
+    crossplane.io/external-name: "6ee56644798bada42b5503d52ff27754/cdf12d12c6d29bb9eebd3de58b01abed"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   managementPolicies:
@@ -221,7 +221,7 @@ metadata:
   name: catdevops-txt-spf
   namespace: crossplane-system
   annotations:
-    crossplane.io/external-name: "5d0d0d10eb0f83116702a0b89530ef3f"
+    crossplane.io/external-name: "6ee56644798bada42b5503d52ff27754/5d0d0d10eb0f83116702a0b89530ef3f"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   managementPolicies:
@@ -243,7 +243,7 @@ metadata:
   name: catdevops-txt-protonmail-verify
   namespace: crossplane-system
   annotations:
-    crossplane.io/external-name: "19c501d43e2ff139d077bf0e9ffcc3c8"
+    crossplane.io/external-name: "6ee56644798bada42b5503d52ff27754/19c501d43e2ff139d077bf0e9ffcc3c8"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   managementPolicies:
@@ -265,7 +265,7 @@ metadata:
   name: catdevops-txt-dmarc
   namespace: crossplane-system
   annotations:
-    crossplane.io/external-name: "7b9dfb63a282127797c5db1d41b2cc8b"
+    crossplane.io/external-name: "6ee56644798bada42b5503d52ff27754/7b9dfb63a282127797c5db1d41b2cc8b"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   managementPolicies:
